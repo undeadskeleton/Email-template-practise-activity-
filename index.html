@@ -29,33 +29,23 @@ https://i.ibb.co/3zn6mW3/linkedin.png
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
 
   <style>
-    *,
-    *::after,
-    *::before {
-      box-sizing: border-box;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      line-height: 1.5;
-    }
-
     body {
-      background-color: #d8dbdb;
-      padding: 20px;
-      font-family: "Roboto", Arial, sans-serif;
-      font-size: 18px;
-      color: #565859;
+      background-color: rgb(164, 165, 166);
+      font-family: "Roboto", sans-serif;
     }
 
     .wrapper {
-      background-color: #f6faff;
+      background-color: aliceblue;
       max-width: 700px;
-      margin: 0 auto;
-      box-shadow: 0 0 5px #616e79;
-      border-top: 10px solid #37a28f;
+      margin-inline: auto;
+      box-shadow: 0 5px 10px #616e79;
+      border-top: 10px solid #37a27f;
       border-radius: 5px 10px;
+    }
+
+    img {
+      max-width: 100%;
+
     }
 
     .logo {
@@ -67,36 +57,111 @@ https://i.ibb.co/3zn6mW3/linkedin.png
       max-width: 250px;
     }
 
-    img {
-      max-width: 100%;
+    .three-column {
+      width: 29%;
+      padding: 5% 2% 6%;
+      text-align: center;
+      float: left;
+      margin: 15px 0 32px;
+
+    }
+
+    .three-column img {
+      max-width: 135px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 29px;
+      margin: 20px 0 8px;
+    }
+
+    p {
+      line-height: 25px;
+      padding-bottom: 15px;
+
+    }
+
+    .btn {
+      background-color: #37a27f;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 10px;
+      letter-spacing: 1px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+      transition: .5s;
+    }
+
+    .btn:hover {
+      background-color: #3db5a0;
+      color: #fff;
+    }
+
+    /* .cl {
+      clear: both;
+    } */
+
+    hr.orange {
+      border: -1px solid #fe6b58;
+      /* width: 96%; */
     }
   </style>
-</head>
 
 <body>
-  <div class="wrapper">
+  <section class="wrapper">
     <div class="logo">
-      <a href="#" target="_blank"><img
+      <a href="#"><img
           src="https://github.com/undeadskeleton/Email-template-practise-activity-/blob/main/img/logo.png?raw=true"
-          alt="html logo" title="HTML5 logo" /></a>
+          alt="html5 logo" title="html5 logo">
+      </a>
     </div>
-    <a href="#" target="_blank"><img
+    <a href="#"><img
         src="https://github.com/undeadskeleton/Email-template-practise-activity-/blob/main/img/banner.png?raw=true"
-        alt="banner" class="banner" width="100%" ; /></a>
-    <!-- END OF THE WRAPPER -->
+        alt="banner" class="banner">
+    </a>
 
-    <div class="three-columns">
+    <div class="three-column">
       <a href="#"><img
           src="https://github.com/undeadskeleton/Email-template-practise-activity-/blob/main/img/mouse.png?raw=true"
-          alt="mouse-img" title="mouse-img" width="100%" /></a>
-
-      <h2>Email Devlepment
-      </h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officiis ea qui, minima quas voluptatem ipsum iusto
-        ducimus non iure corrupti laborum voluptatum sunt delectus deserunt vel aut in veritatis?</p>
-      <div class="btn-holder"><a href="#">Learn more</a></div>
+          alt="mouse-img"></a>
+      <h2>Email Development</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque non consectetur assumenda magnam,
+        vel quae tempore veritatis dolorum numquam quas corrupti ex error exercitationem voluptates. Quidem nesciunt
+        suscipit repellat.</p>
+      <div class="btn-holder"><a href="#" class="btn">Learn more</a></div>
     </div>
-  </div>
+
+    <div class="three-column">
+      <a href="#">
+        <img src="https://github.com/undeadskeleton/Email-template-practise-activity-/blob/main/img/phone.png?raw=true"
+          alt="phone-img">
+      </a>
+      <h2>Mobile Friendly</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis soluta sed pariatur vero.
+        Itaque, consectetur recusandae! Quaerat cum voluptatibus, ab distinctio accusantium tempora assumenda,
+        expedita error a porro odit.</p>
+      <span class="btn-holder"><a href="" class="btn">HTML Email</a></span>
+    </div>
+
+    <div class="three-column">
+      <a href="#">
+        <img
+          src="https://github.com/undeadskeleton/Email-template-practise-activity-/blob/main/img/computer.png?raw=true"
+          alt="client desktop">
+      </a>
+      <h2>Desktop Client</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolore sapiente exercitationem.
+        Voluptatem, fugiat numquam perferendis a ad fuga. Officiis dignissimos libero nulla sint distinctio
+        exercitationem quibusdam sapiente, ipsa impedit.</p>
+      <span class="btn-holder"><a href="#" class="btn">Development</a></span>
+    </div>
+    <div class="cl"></div>
+    <hr class="orange">
+  </section>
+  <!-- END OF WRAPPER -->
 </body>
 
 </html>
